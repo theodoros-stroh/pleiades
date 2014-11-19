@@ -1,0 +1,39 @@
+1.1 Create DB user: liferay-paros-1, 
+		password: bengie 
+Development env:
+		created in oracle 
+		host: localhost
+		from user: sys / bengie
+
+1.2 Grant CONNECT, DBA to user: liferay-paros-1
+
+1.3. Verify that user liferay-paros-1 logs in succesfully (log in Oracle console for verification)
+
+	(15 minutes)
+
+2. Copy ojdbc6.jar into %LIFERAY_HOME%\tomcat-7.0.42\lib\ext
+
+3. Start Liferay
+
+4. Open URL http://host:8080/home from a Web browser
+
+4.1 Complete the following fields:
+	Portal Name 
+	Default Language
+	Administrator's First Name, 
+		Last Name and 
+		Email (Required)
+
+	UNCHECK OPTION "Add Sample Data"
+
+	Database Type, 
+		JDBC URL, 
+		JDBC Driver Class Name (Required), 
+		User Name and password 
+
+	[Development Env: Oracle, jdbc:oracle:thin:@localhost:1521:orcl, oracle.jdbc.driver.OracleDriver, liferay-paros-1, bengie
+
+4.2 Wait until message "The configuration was saved in D:/paros/liferay-portal-6.2-ce-ga2/portal-setup-wizard.properties"
+	is displayed to indicate succesfull completion.
+
+set admin user: test@liferay.com/bengie
