@@ -1,1 +1,0 @@
-select userId, emailAddress, firstName, lastName, createDate, lastLoginDate, status from user_;
