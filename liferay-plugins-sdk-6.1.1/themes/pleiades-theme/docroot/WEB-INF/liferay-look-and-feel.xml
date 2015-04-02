@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 6.1.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_6_1_0.dtd">
+
+<look-and-feel>
+
+	<compatibility>
+		<version>6.1.0+</version>
+	</compatibility>
+
+	<!-- <compatibility> <version>${current-version}</version> </compatibility> <group-limit> <group-includes> <group-id name="[$GROUP_ID$]" 
+		/> </group-includes> </group-limit> -->
+
+	<theme id="pleiades-theme" name="Pleiades Theme">
+		<!-- <root-path>${themes-path}/[$THEME_ID$]</root-path> <virtual-path/> <template-extension>vm</template-extension> -->
+		<settings>
+			<setting configurable="true" key="portlet-setup-show-borders-default" type="checkbox" value="false" />
+			<setting configurable="true" key="show-breadcrumbs" type="checkbox" value="true" />
+			<setting configurable="true" key="show-site-name-default" value="false" />
+			<setting configurable="true" key="display-company-logo" type="checkbox" value="false" />
+			<setting configurable="true" key="display-footer" type="checkbox" value="true" />
+			<setting configurable="true" key="footer-nav-title" type="text" value="Site Pages" />
+			<setting configurable="true" key="footer-section-1-article-id" type="text" />
+			<setting configurable="true" key="footer-section-2-article-id" type="text" />
+			<setting configurable="true" key="footer-section-3-article-id" type="text" />
+			<setting configurable="true" key="footer-section-4-article-id" type="text" />
+		</settings>
+		
+		<!-- <color-scheme name="default" id="01"> <css-class>default</css-class> <color-scheme-images-path>${images-path}/color_schemes/default</color-scheme-images-path> 
+			</color-scheme> <color-scheme name="first-page" id="02"> <css-class>default</css-class> <color-scheme-images-path>${images-path}/color_schemes/first-page</color-scheme-images-path> 
+			</color-scheme> -->
+
+		<layout-templates>
+			<custom>
+				<layout-template id="3-3-3-columns" name="3-3-3 Columns Layout">
+					<template-path>/layouttpl/custom/3-3-3-columns-layouttpl/3_3_3_columns.tpl</template-path>
+					<wap-template-path>/layouttpl/custom/3-3-3-columns-layouttpl/3_3_3_columns.tpl</wap-template-path>
+					<thumbnail-path>/layouttpl/custom/3-3-3-columns-layouttpl/3_3_3_columns.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
+
+	</theme>
+</look-and-feel>
