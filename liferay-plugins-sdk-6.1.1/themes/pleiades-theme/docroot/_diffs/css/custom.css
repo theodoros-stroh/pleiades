@@ -524,3 +524,149 @@ img.center {
 .button, #banner #navigation a, #footer #navigation a:hover {
 	@include text-shadow(0 1px 0 #FFF);
 }
+
+/* Mine */
+
+body {
+    background: url("../images/custom/background.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top: 0 solid #142933;
+}
+
+#wrapper {
+	padding:0 !important;
+}
+
+.default-page #sliderFrame {
+	display:none;
+}
+
+.first-page #banner {
+	display:none;
+}
+
+#upper-part-header {
+    background: white;
+    height: 93px;
+    width: 100%;
+    position:relative;
+}
+
+#lower-part-header {
+	display:none;
+    background: none repeat scroll 0 0 white;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+#lang {
+    position: absolute;
+    right: 90px;
+    top: 12px;
+    z-index: 999;
+}
+
+#sign-in {
+    color: #444;
+    font: 200 1.1em "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    letter-spacing: 0.1em;
+    position: absolute;
+    right: 24px;
+    text-decoration: none;
+    top: 12px;
+}
+
+#navigation {
+    background: none repeat-x scroll 0 10px rgba(0, 0, 0, 0);
+    clear: both;
+    display: block;
+    height: 40px;
+}
+
+#navigation ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0px 0;
+    padding: 11px 0 23px 5px;
+}
+
+#navigation li {
+    float: left;
+    padding: 0 20px;
+}
+
+#upper-part-header #heading .site-title {
+    margin-top: 0;
+    padding-left: 25px;
+    padding-top: 0.5em;
+}
+
+
+#upper-part-header #heading .site-title #pageSearch {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+#wrapper {
+    margin-left: 12%;
+    padding-top: 10px;
+    width: 76%;
+    min-width: 1024px;
+}
+
+#sliderFrame 
+{
+    position:relative;
+    width:100%;
+    margin:0 auto; /*center-aligned*/
+}
+
+#slider, #slider div.sliderInner {
+    width:100%;height:330px;/* Must be the same size as the slider images */
+}
+
+
+#content #main-content {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    width: 98%;
+}
+
+
+#middle {
+    clear: both;
+    color: #505454;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: auto;
+    padding: 0 15px;
+    z-index: 100;
+}
+#middle h1 {
+    color: #8b8a81;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 33px;
+    font-weight: normal;
+    margin-top: 0;
+margin-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+#middle h2 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #8b8a81;
+}
+#middle h3 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 19px;
+    font-weight: normal;
+    color: #8b8a81;
+margin: 10px;
+}
