@@ -41,3 +41,6 @@
 #else
 	#set ($footer_section_4 = $journalContentUtil.getContent($group_id, "FOOTER-SOCIAL", null, "$locale", $theme_display))
 #end
+
+
+#set ($isHomePage = $layout.getPlid()==$theme_display.getScopeGroup().getDefaultPublicPlid())

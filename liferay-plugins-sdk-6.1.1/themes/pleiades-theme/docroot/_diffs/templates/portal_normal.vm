@@ -52,46 +52,51 @@
 			</div>
 		</div>	
 		
-	
-		<div id="sliderFrame">
-		    <div id="slider">
-		        <a href="http://www.menucool.com/javascript-image-slider" target="_blank">
-		            <img src="$images_folder/jsImgSlider/window-view.png" alt="Welcome to Menucool.com" />
-		        </a>
-		        <img src="$images_folder/jsImgSlider/carousel-pleiades-front.png" alt="" />
-		        <img src="$images_folder/jsImgSlider/carousel-pleiades-panoramic.png" alt="Pure Javascript. No jQuery. No flash." />
-		        <img src="$images_folder/jsImgSlider/carousel-1.png" alt="#htmlcaption" />
-		        <img src="$images_folder/jsImgSlider/carousel-2.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-3.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-4.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-5.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-6.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-7.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-8.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-9.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-10.png" />
-		        <img src="$images_folder/jsImgSlider/carousel-11.png" />
-		    </div>
-		</div>	
-	
-		
-		#if ($has_navigation || $is_signed_in)
-			#parse ("$full_templates_path/navigation.vm")
+		#if ($isHomePage)
+			<div id="sliderFrame">
+			    <div id="slider">
+			        <img src="$images_folder/jsImgSlider/carousel-window-view.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-pleiades-front.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-map.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-pleiades-panoramic.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-1.png"/>
+			        <img src="$images_folder/jsImgSlider/carousel-2.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-12.png"/>
+			        <img src="$images_folder/jsImgSlider/carousel-13.png"/>
+			        <img src="$images_folder/jsImgSlider/carousel-14.png"/>
+			       	<img src="$images_folder/jsImgSlider/carousel-15.png" /> 
+			        <img src="$images_folder/jsImgSlider/carousel-3.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-4.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-5.png" />
+			       	<img src="$images_folder/jsImgSlider/carousel-16.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-8.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-9.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-10.png" />
+			        <img src="$images_folder/jsImgSlider/carousel-11.png" />
+			    </div>
+			</div>	
+		#else
+			<div id="smallBanner">
+			</div>
 		#end
+		
+		<header id="banner" role="banner">
+			#if ($has_navigation || $is_signed_in)
+				#parse ("$full_templates_path/navigation.vm")
+			#end
+		</header>
 		
 		
 		<div id="content">
-			<!--
+			
 			#if ($show_breadcrumbs)
 				<nav class="site-breadcrumbs" id="breadcrumbs">
 					<h1>
 						<span>#language ("breadcrumbs")</span>
 					</h1>
-	
-					#breadcrumbs()
 				</nav>
 			#end
-			-->
+			
 	
 			#if ($selectable)
 				$theme.include($content_include)

@@ -2,8 +2,8 @@
 
 /* -------- Variables -------- */
 
-$bannerHeight: 138px;
-$smallBannerHeight: 224px;
+$bannerHeight: 47px;
+$smallBannerHeight: 47px;
 $navHeight: 46px;
 $color: #3D7899;
 
@@ -46,7 +46,6 @@ body {
 /* -------- Banner / Navigation -------- */
 
 #banner {
-	background: url(../images/pleiades/window-view.jpg) 0 0 no-repeat;
 	height: $smallBannerHeight;
 	position: relative;
 	
@@ -578,24 +577,7 @@ body {
     top: 12px;
 }
 
-#navigation {
-    background: none repeat-x scroll 0 10px rgba(0, 0, 0, 0);
-    clear: both;
-    display: block;
-    height: 40px;
-}
 
-#navigation ul {
-    display: inline-block;
-    list-style: outside none none;
-    margin: 0px 0;
-    padding: 11px 0 23px 5px;
-}
-
-#navigation li {
-    float: left;
-    padding: 0 20px;
-}
 
 #upper-part-header #heading .site-title {
     margin-top: 0;
@@ -615,6 +597,7 @@ body {
     padding-top: 10px;
     width: 76%;
     min-width: 1024px;
+    max-width: 1200px;
 }
 
 #sliderFrame 
@@ -622,10 +605,11 @@ body {
     position:relative;
     width:100%;
     margin:0 auto; /*center-aligned*/
+    height:450px;
 }
 
 #slider, #slider div.sliderInner {
-    width:100%;height:330px;/* Must be the same size as the slider images */
+    width:100%;height:450px;/* Must be the same size as the slider images */
 }
 
 
@@ -669,4 +653,95 @@ margin-bottom: 10px;
     font-weight: normal;
     color: #8b8a81;
 margin: 10px;
+}
+
+#navigation {
+    background: none repeat-x scroll 0 10px rgba(0, 0, 0, 0);
+    clear: both;
+    display: block;
+    height: 40px;
+    width:100%
+}
+
+#navigation ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation li {
+    float: left;
+    padding:0;
+}
+
+
+#banner #navigation {
+    background: url("../images/custom/nav_bg.png") repeat-x scroll 0 -1px rgba(0, 0, 0, 0);
+    bottom: 0;
+    float: left;
+    font: 12px "Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+    height: 46px;
+    left: 0;
+    position: absolute;
+    width:100%;
+}
+
+#banner #navigation a {
+    background: url("../images/custom/nav_split.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    color: #3d7899;
+    display: block;
+    padding: 15px 50px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* unvisited link */
+a:link {
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+   color: #5f5f5f;
+   text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #5f5f5f;
+    text-decoration: underline;
+}
+h1.portlet-title{
+font-size:22px
+}
+
+.lfr-asset-column-details .lfr-asset-metadata {
+    clear: both;
+    display: none;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+}
+.taglib-page-iterator .search-pages {
+    display: none;
+    float: right;
+}
+.taglib-page-iterator {
+    clear: both;
+    display: none;
+    height: auto;
+    overflow: hidden;
+    width: auto;
+}
+#smallBanner {
+	height:300px;
+	width:100%;
+	background: #FFF url(../images/jsImgSlider/carousel-12.png) 100% 0 repeat;
 }
