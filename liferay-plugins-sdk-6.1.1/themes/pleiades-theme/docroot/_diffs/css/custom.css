@@ -622,6 +622,9 @@ body {
 
 
 #middle {
+	background-image: url("../images/edge.png");
+    background-position: left top;
+    background-repeat: repeat-y;
     clear: both;
     color: #505454;
     float: left;
@@ -637,7 +640,7 @@ body {
     font-size: 33px;
     font-weight: normal;
     margin-top: 0;
-margin-bottom: 10px;
+	margin-bottom: 10px;
     padding-top: 5px;
     text-align: center;
 }
@@ -652,7 +655,7 @@ margin-bottom: 10px;
     font-size: 19px;
     font-weight: normal;
     color: #8b8a81;
-margin: 10px;
+	margin: 10px;
 }
 
 #navigation {
@@ -744,4 +747,7 @@ font-size:22px
 	height:300px;
 	width:100%;
 	background: #FFF url(../images/jsImgSlider/carousel-12.png) 100% 0 repeat;
+}
+#breadcrumbs {
+	width: 100%;
 }
